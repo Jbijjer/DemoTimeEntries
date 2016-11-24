@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1a072ac47057467f96ebc8dce35dfa79" Name="Diagram1">
+        <EntityTypeShape EntityType="DBDemoModel.C__MigrationHistory" Width="1.5" PointX="6.25" PointY="0.5" />
+        <EntityTypeShape EntityType="DBDemoModel.Entry" Width="1.5" PointX="10.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DBDemoModel.Project" Width="1.5" PointX="8.5" PointY="7.625" />
+        <EntityTypeShape EntityType="DBDemoModel.Task" Width="1.5" PointX="8.5" PointY="4.5" />
+        <EntityTypeShape EntityType="DBDemoModel.User" Width="1.5" PointX="6.25" PointY="3.125" />
+        <AssociationConnector Association="DBDemoModel.FK_dbo_Entrees_dbo_Consultants_Consultant_Id" />
+        <AssociationConnector Association="DBDemoModel.FK_dbo_Entrees_dbo_Projets_Projet_Id" />
+        <AssociationConnector Association="DBDemoModel.FK_dbo_Entrees_dbo_Taches_Tache_Id" />
+        <AssociationConnector Association="DBDemoModel.ProjectsUsers" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

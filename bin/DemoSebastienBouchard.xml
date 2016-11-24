@@ -1,0 +1,309 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DemoSebastienBouchard
+</name>
+</assembly>
+<members>
+<member name="M:DemoSebastienBouchard.EntriesController.CreateEntry(DemoSebastienBouchard.DBDemoEntities@,System.String,System.DateTime,System.Decimal,System.String,System.String,System.String)">
+ <summary>
+ Create an instance of a new Entry
+ </summary>
+ <param name="Description">Description of the entry</param>
+ <param name="EntryDate">Date of the Entry</param>
+ <param name="NbHours">Number of hours spent on this entry</param>
+ <param name="ProjectName">Name of the project associated to this entry</param>
+ <param name="TaskName">Name of the task associated to this entry</param>
+ <param name="UserName">Name of the user associated to this entry</param>
+ <returns>Returns an instance of the created entry</returns>
+</member>
+<member name="M:DemoSebastienBouchard.EntriesController.GetEntryById(DemoSebastienBouchard.DBDemoEntities@,System.Int32)">
+ <summary>
+ Get the instance of an entry for a given EntryId
+ </summary>
+ <param name="dde">An Instance of DBDemoEntities byref</param>
+ <param name="EntryId">The EntryId of the entry to retrieve</param>
+ <returns>Returns an instance of an entry or null</returns>
+</member>
+<member name="M:DemoSebastienBouchard.EntriesController.DeleteEntry(DemoSebastienBouchard.DBDemoEntities@,DemoSebastienBouchard.Entry@)">
+ <summary>
+ Deletes an entry from database
+ </summary>
+ <param name="dde">An Instance of DBDemoEntities byref</param>
+ <param name="Entry">Instance of an entry to be deleted</param>
+ <returns>Returns true if delete was a success</returns>
+</member>
+<member name="M:DemoSebastienBouchard.EntriesController.InsertNewEntry(DemoSebastienBouchard.DBDemoEntities@,DemoSebastienBouchard.Entry@)">
+ <summary>
+ Inserts an entry in database
+ </summary>
+ <param name="dde">An Instance of DBDemoEntities byref</param>
+ <param name="entry">Instance of an entry to be inserted</param>
+ <returns>Returns true if insert was a success</returns>
+</member>
+<member name="M:DemoSebastienBouchard.EntriesController.UpdateEntry(DemoSebastienBouchard.DBDemoEntities@,DemoSebastienBouchard.Entry@)">
+ <summary>
+ Updates an entry in database
+ </summary>
+ <param name="dde">An Instance of DBDemoEntities byref</param>
+ <param name="entry">Instance of an entry to be updated</param>
+ <returns>Returns true if update was a success</returns>
+</member>
+<member name="M:DemoSebastienBouchard.ProjectsController.CreateProject(System.String)">
+ <summary>
+ Create an instance of a new project
+ </summary>
+ <param name="Name">Name of new project</param>
+ <returns></returns>
+</member>
+<member name="M:DemoSebastienBouchard.ProjectsController.GetProjectByName(DemoSebastienBouchard.DBDemoEntities@,System.String)">
+ <summary>
+ Get a project by its name
+ </summary>
+ <param name="dde">An instance of DBDemoEntites</param>
+ <param name="Name">Name of project to retrieve</param>
+ <returns>Project with the given name</returns>
+</member>
+<member name="M:DemoSebastienBouchard.TasksController.CreateTask(System.String)">
+ <summary>
+ Create an instance of a new task
+ </summary>
+ <param name="Name">Name of new task</param>
+ <returns>Task created</returns>
+</member>
+<member name="M:DemoSebastienBouchard.TasksController.GetTaskByName(DemoSebastienBouchard.DBDemoEntities@,System.String)">
+ <summary>
+ Get a task by its name
+ </summary>
+ <param name="dde">An instance of DBDemoEntites</param>
+ <param name="Name">Name of task to retrieve</param>
+ <returns>Task with the given name</returns>
+</member>
+<member name="F:DemoSebastienBouchard._Default._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._rpTitle">
+<summary>
+rpTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._ASPxLabel3">
+<summary>
+ASPxLabel3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._rpUsers">
+<summary>
+rpUsers control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._cboUsers">
+<summary>
+cboUsers control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._lnkCreateNewUser">
+<summary>
+lnkCreateNewUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._panCreateUser">
+<summary>
+panCreateUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._lblNewUserName">
+<summary>
+lblNewUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._txtUserName">
+<summary>
+txtUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._lblUserNameRequired">
+<summary>
+lblUserNameRequired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._btnConfirmCreateUser">
+<summary>
+btnConfirmCreateUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._btnCancelCreateUser">
+<summary>
+btnCancelCreateUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._ASPxRoundPanel1">
+<summary>
+ASPxRoundPanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._gvEntries">
+<summary>
+gvEntries control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoSebastienBouchard._Default._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:DemoSebastienBouchard._Default.SetGridViewComboBoxes">
+ <summary>
+ Fill the grid view's combo boxes with data, and replace Id by Text
+ </summary>
+</member>
+<member name="M:DemoSebastienBouchard._Default.BindCboUsers">
+ <summary>
+ Bind date source to cboUsers
+ </summary>
+</member>
+<member name="M:DemoSebastienBouchard._Default.FetchGridDataSource">
+ <summary>
+ Get datasource for Entries Grid view
+ </summary>
+ <returns>A list(of entry) to use as data source</returns>
+</member>
+<member name="M:DemoSebastienBouchard._Default.ShowCreateUserPanel(System.Boolean)">
+ <summary>
+ Toggle on or off the CreateUserPanel
+ </summary>
+ <param name="visible">True to show the panel, false to hide it</param>
+</member>
+<member name="M:DemoSebastienBouchard.UsersController.CreateUser(System.String)">
+ <summary>
+ Create an instance of a new user
+ </summary>
+ <param name="Name">Name of user</param>
+ <returns>Returns an instance of a user</returns>
+</member>
+<member name="M:DemoSebastienBouchard.UsersController.GetUserByName(DemoSebastienBouchard.DBDemoEntities@,System.String)">
+ <summary>
+ Get a user by its name
+ </summary>
+ <param name="dde">An instance of DBDemoEntites</param>
+ <param name="Name">Name of user to retrieve</param>
+ <returns>User with the given name</returns>
+</member>
+<member name="M:DemoSebastienBouchard.UsersController.InsertUser(DemoSebastienBouchard.DBDemoEntities@,DemoSebastienBouchard.User@)">
+ <summary>
+ Insert new user in Database
+ </summary>
+ <param name="dde">An instance of DBDemoEntites</param>
+ <param name="newUser">New User to insert</param>
+ <returns>Returns true if insert was a success</returns>
+</member>
+<member name="M:DemoSebastienBouchard.DemoHelper.CreateNewData(DemoSebastienBouchard.DBDemoEntities@)">
+ <summary>
+ Used once at first launch to create demo data
+ </summary>
+</member>
+<member name="T:DemoSebastienBouchard.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:DemoSebastienBouchard.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:DemoSebastienBouchard.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:DemoSebastienBouchard.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:DemoSebastienBouchard.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:DemoSebastienBouchard.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+</members>
+</doc>
